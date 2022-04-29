@@ -16,10 +16,10 @@ const restaurant = {
   phoneNumber: "(786)-677-2903",
 };
 
-// db.collection("restaurants")
-//   .add(restaurant)
-//   .then((doc) => console.log("created restaurant", doc.id))
-//   .catch((err) => console.log(err));
+db.collection("restaurants")
+  .add(restaurant)
+  .then((doc) => console.log("created restaurant", doc.id))
+  .catch((err) => console.log(err));
 
 const restaurant2 = {
   name: "Bolay",
